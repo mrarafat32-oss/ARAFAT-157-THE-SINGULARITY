@@ -1,83 +1,51 @@
 <!DOCTYPE html>
-<html lang="bn">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>ARAFAT-157 | CYBER-GOD SUPREMACY</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Rajdhani:wght@700&display=swap');
-        :root { --gold: #FFD700; --neon: #00ff88; --bg: #000; }
-        body, html { margin: 0; padding: 0; background: var(--bg); color: #fff; font-family: 'Rajdhani', sans-serif; overflow: hidden; height: 100vh; user-select: none; -webkit-touch-callout: none; }
-        canvas { position: fixed; inset: 0; z-index: -1; filter: contrast(120%) brightness(50%); }
-        .s-header { background: rgba(0,0,0,0.95); border-bottom: 2px solid var(--gold); padding: 12px; font-family: 'Orbitron'; font-size: 10px; color: var(--gold); letter-spacing: 6px; text-align: center; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 0 30px var(--gold); text-transform: uppercase; }
-        .main-container { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; padding: 20px; perspective: 1000px; }
-        .portal-vortex { position: relative; width: 300px; height: 300px; margin-bottom: 20px; transition: transform 0.5s; transform-style: preserve-3d; }
-        .vortex-ring { position: absolute; inset: 0; border: 4px dashed var(--gold); border-radius: 50%; animation: spin 10s linear infinite; }
-        .vortex-ring-inner { position: absolute; inset: 15px; border: 2px solid var(--neon); border-radius: 50%; animation: spin-rev 5s linear infinite; box-shadow: 0 0 50px var(--neon); }
-        @keyframes spin { 100% { transform: rotate(360deg); } }
-        @keyframes spin-rev { 100% { transform: rotate(-360deg); } }
-        .king-face { position: absolute; inset: 30px; border-radius: 50%; border: 5px solid #000; overflow: hidden; box-shadow: 0 0 80px rgba(255,215,0,0.4); z-index: 10; }
-        .king-face img { width: 100%; height: 100%; object-fit: cover; filter: contrast(1.1); }
-        .title-aura { font-family: 'Orbitron'; font-size: 75px; font-weight: 900; background: linear-gradient(to bottom, #fff, var(--gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 30px rgba(255,215,0,0.5)); margin: 10px 0; letter-spacing: -4px; }
-        .security-badge { background: rgba(0,255,136,0.1); border: 1px solid var(--neon); color: var(--neon); padding: 5px 25px; border-radius: 50px; font-size: 10px; font-weight: 900; letter-spacing: 3px; margin-bottom: 20px; }
-        .form-fortress { background: rgba(5,5,5,0.98); border: 1.5px solid #222; border-top: 4px solid var(--gold); padding: 40px 25px; border-radius: 40px; width: 100%; max-width: 360px; box-shadow: 0 0 200px #000; }
-        input { width: 100%; padding: 18px; background: #080808; border: 1px solid #151515; border-radius: 15px; color: #fff; font-size: 17px; margin-bottom: 12px; text-align: center; outline: none; box-sizing: border-box; }
-        input:focus { border-color: var(--gold); box-shadow: 0 0 20px rgba(255,215,0,0.2); }
-        .btn-authorize { width: 100%; padding: 22px; background: var(--gold); border: none; border-radius: 100px; font-family: 'Orbitron'; font-weight: 900; font-size: 18px; color: #000; cursor: pointer; box-shadow: 0 15px 50px rgba(255,215,0,0.4); }
-        #shield-overlay { display: none; position: fixed; inset: 0; background: #000; z-index: 10000; flex-direction: column; justify-content: center; align-items: center; }
-        .data-stream { font-family: 'Orbitron'; font-size: 14px; color: var(--neon); text-align: center; }
-    </style>
-</head>
-<body oncontextmenu="return false;" onkeydown="return false;">
-    <canvas id="digital-void"></canvas>
-    <div class="s-header">MRARAFAT32-OSS // CYBER-SHIELD ACTIVE // SUPREME AI POWER</div>
-    <div id="shield-overlay"><div class="data-stream" id="shield-logs">INITIATING QUANTUM LOCK...</div></div>
-    <div class="main-container">
-        <div class="portal-vortex" id="portal">
-            <div class="vortex-ring"></div>
-            <div class="vortex-ring-inner"></div>
-            <div class="king-face">
-                <img src="https://i.ibb.co/v4pB1xS/IMG-2024.jpg" alt="KING ARAFAT">
-            </div>
-        </div>
-        <div class="security-badge">ANTI-HACKER PROTOCOL</div>
-        <div class="title-aura">৳৩০০০</div>
-        <div class="form-fortress">
-            <form id="god-gate">
-                <input type="text" id="subject" placeholder="NAME OF SUBJECT" required>
-                <input type="number" id="phone" placeholder="PHONE LINE" required>
-                <input type="text" id="txhash" placeholder="TXID (SIGNATURE)" required>
-                <button type="submit" class="btn-authorize">AUTHORIZE ⚡</button>
-            </form>
-        </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Thanos JS</title>
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A demo site to use with Netlify Drop">
+    <meta name="keywords" content="Thanos, JavaScript, Paradoy, Netlify Drop">
+    <meta name="author" content="Rafael Conde">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  </head>
+  <body>
+    <div class="titan-background">
+      <span class="stars stars-L"></span>
+      <span class="stars stars-M"></span>
+      <span class="stars stars-S"></span>
     </div>
-    <script>
-        const c = document.getElementById("digital-void"), ctx = c.getContext("2d");
-        c.width = window.innerWidth; c.height = window.innerHeight;
-        const p = []; for(let i=0; i<150; i++) p.push({x: Math.random()*c.width, y: Math.random()*c.height, s: Math.random()*2});
-        function render() {
-            ctx.fillStyle = "rgba(0,0,0,0.15)"; ctx.fillRect(0,0,c.width,c.height);
-            ctx.fillStyle = "#FFD700"; p.forEach(i => { ctx.fillRect(i.x, i.y, i.s, i.s); i.y += i.s; if(i.y > c.height) i.y = 0; });
-            requestAnimationFrame(render);
-        } render();
-        document.addEventListener('mousemove', e => {
-            const portal = document.getElementById('portal');
-            const x = (window.innerWidth/2 - e.pageX)/20; const y = (window.innerHeight/2 - e.pageY)/20;
-            portal.style.transform = `rotateY(${x}deg) rotateX(${-y}deg)`;
-        });
-        document.getElementById("god-gate").onsubmit = function(e) {
-            e.preventDefault();
-            document.getElementById("shield-overlay").style.display = "flex";
-            const l = document.getElementById("shield-logs"), s = ["ENCRYPTING...", "LOCKED TO MRARAFAT32-OSS", "SIGNAL SENT."];
-            let i = 0; const itv = setInterval(() => {
-                if(i < s.length) { l.innerText = s[i]; i++; } else {
-                    clearInterval(itv);
-                    const name = document.getElementById("subject").value, phone = document.getElementById("phone").value, tx = document.getElementById("txhash").value;
-                    window.location.href = `https://wa.me/8801889829157?text=KING_REPORT:%0AName: ${name}%0APhone: ${phone}%0ATxID: ${tx}`;
-                }
-            }, 1000);
-        };
-        window.addEventListener('keydown', e => { if(e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74)) || (e.ctrlKey && e.keyCode == 85)) e.preventDefault(); });
-    </script>
-</body>
+    <div class="marvellous-container">
+      <div class="header">
+        <h1><span class="title-marvel">Thanos</span> <span class="title-studios">JS</span></h1>
+        <h2>
+          Reduce the file size of your project down to 50%, <br />
+          by randomly deleting half of the files.
+        </h2>
+      </div>
+      <div class="installation-instructions">
+        <h3>Installation</h3>
+        <code>$ gem install power</code>
+        <code>$ gem install reality</code>
+        <code>$ gem install mind</code>
+        <code>$ gem install space</code>
+        <code>$ gem install time</code>
+        <code>$ gem install soul</code>
+      </div>
+      <div class="usage-instructions">
+        <h3>Basic Usage</h3>
+        <code>$ thanos snap-fingers --with-glove</code>
+      </div>
+      <div class="footer">
+        <img src="assets/glove.png" alt="thanos gauntlet but its like the classic emoji hands with an awful photoshop of stupid gems on it, because funny"/>
+        <p>
+          This whole site is obviously a parody, <br />
+          just to demo how awesome <a target="_blank" href="https://app.netlify.com/drop">Netlify Drop is — give it a try.</a>
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
